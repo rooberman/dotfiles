@@ -128,10 +128,6 @@ bindkey -M vicmd 'j' history-substring-search-down
 # }}} End configuration added by Zim install
 
 
-# Si no adjuntamos el path de windows a linux, necesitamos añadir la ruta de VS Code si queremos usarlo como editor
-path+=('/mnt/c/Users/roberto.martinez/AppData/Local/Programs/Microsoft VS Code/bin')
-
-
 # Activa la tecla rapida Ctrl + E para editar la linea de comandos en el editor por defecto de forma comoda
 autoload -z edit-command-line
 zle -N edit-command-line

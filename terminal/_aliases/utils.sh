@@ -8,3 +8,6 @@ alias o.='/mnt/c/Windows/explorer.exe $PWD'
 #alias zsh="source $HOME/.zshrc"
 alias dl="docker_list"
 alias di="docker images"
+alias dc="$DOTFILES_PATH/scripts/docker_connect"
+
+alias sof="$DOTFILES_PATH/scripts/show_open_files"

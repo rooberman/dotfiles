@@ -1,7 +1,7 @@
 # Activar debugger
 #zmodload zsh/zprof
 
-alias sudo="sudo "
+export DOTFILES_PATH=$HOME/.dotfiles
 
 # Start configuration added by Zim install {{{
 #
@@ -127,63 +127,22 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 # }}} End configuration added by Zim install
 
-#setopt PROMPT_SUBST
-
-#alias sudo="sudo "
-#alias ll="ls -ls"
-#alias la="ls -la"
-#alias cdh="cd $HOME"
-#alias zsh="source $HOME/.zshrc"
-
-#alias gs="git status"
-
-#alias dl="docker_list"
-#alias di="docker images"
 
 # Si no adjuntamos el path de windows a linux, necesitamos añadir la ruta de VS Code si queremos usarlo como editor
 path+=('/mnt/c/Users/roberto.martinez/AppData/Local/Programs/Microsoft VS Code/bin')
 
-function docker_list {
-  containers=$(docker ps | awk '{if (NR!=1) print $1 ": " $(NF)}')
-
-  echo "Containers: 👇"
-  echo $containers
-}
-
-#PROMPT='%n @ %d > '
-
-function prompt_exit_code() {
-  local EXIT="$?"
-
-  if [ $EXIT -eq 0 ]; then
-    echo -n green
-  else
-    echo -n red
-  fi
-}
-
-function git_prompt_info {
-  inside_git_repo="$(git rev-parse --is-inside-work-tree 2>/dev/null)"
-
-  if [ "$inside_git_repo" ]; then
-    current_branch=$(git branch --show-current)
-    print -P " on %{%F{yellow}%}$current_branch%{%f%}"
-  else
-    echo ""
-  fi
-}
-
-#PROMPT='%{%F{$(prompt_exit_code)}%}%n%{%f%} @ %d$(git_prompt_info) > '
-#RPROMPT='%T'
 
 # Activa la tecla rapida Ctrl + E para editar la linea de comandos en el editor por defecto de forma comoda
 autoload -z edit-command-line
 zle -N edit-command-line
 bindkey '^e' edit-command-line
 
+# NVM gestor de versiones de node
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use # Esto carga nvm pero no activa node para evitar error con ruta de windows
 # Hay que ejecutar 'nvm use node' antes de empezar a usar node
+
+source $DOTFILES_PATH/terminal/init.sh
 
 cd ~
 

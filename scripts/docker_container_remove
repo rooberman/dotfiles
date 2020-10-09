@@ -4,11 +4,11 @@ set -euo pipefail
 
 #source "$DOTFILES_PATH/scripts/core/_main.sh"
 
-##? Remove container
+##? Remove docker containers
 #?? 1.0.0
 ##?
 ##? Usage:
-##?    connect
+##?    docker_container_remove
 
 #docs::eval "$@"
 

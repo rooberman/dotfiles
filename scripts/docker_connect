@@ -8,7 +8,7 @@ set -euo pipefail
 #?? 1.0.0
 ##?
 ##? Usage:
-##?    connect
+##?    docler_connect
 
 #docs::eval "$@"
 

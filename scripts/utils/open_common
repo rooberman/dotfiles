@@ -1,0 +1,16 @@
+declare -A folders
+
+folders=(
+	["🔗 Codely"]="https://codely.com"
+	["🔗 Pro"]="https://pro.codely.com"
+	["📁 Downloads"]="$HOME/Downloads"
+	["📁 Desktop"]="$HOME/Desktop"
+)
+
+folder=$(printf "%s\n" "${!folders[@]}" | choose)
+
+if [[ -n ${folders[$folder]} ]]; then
+    open "${folders[$folder]}"
+else
+    echo "No folder selected"
+fi

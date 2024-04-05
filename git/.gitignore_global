@@ -1,3 +1,7 @@
+# Mac
+.DS_Store
+
+# Move to Projectrak Cloud Repo
 application-local.yml
 application-formula_scheduler-local.yml
 application-formula_calc-local.yml

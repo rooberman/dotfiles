@@ -1,1 +1,13 @@
+
+# Karabiner
+/os/mac/Karabiner/automatic_backups
+
+# IntelliJ files
 .idea
+
+# Compiled Zsh
+shell/zsh/**/**.zwc
+shell/zsh/**/**.zwc.old
+
+# Private Stuff
+/**/**/private-*

@@ -1,0 +1,5 @@
+[user]
+	name = Roberto Martínez Hernández
+	email = roberto.martinez@deiser.com
+[core]
+	excludesfile = /Users/roberto.martinez/.gitignore

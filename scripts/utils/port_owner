@@ -5,7 +5,6 @@ set -euo pipefail
 source "$DOTLY_PATH/scripts/core/_main.sh"
 
 ##? Prints the owner for a port
-#?? 1.0.0
 ##?
 ##? Usage:
 ##?   port_owner <port>

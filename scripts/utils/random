@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Genera un dato aleatorio
+##?
+##? Usage:
+##?    random
+docs::parse "$@"
+
 declare -A commands
 
 commands=(

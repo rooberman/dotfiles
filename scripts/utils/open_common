@@ -1,3 +1,15 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Abre una carpeta seleccionada de la lista
+##?
+##? Usage:
+##?    open_common
+docs::parse "$@"
+
 declare -A folders
 
 folders=(

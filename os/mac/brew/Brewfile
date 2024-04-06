@@ -1,0 +1,34 @@
+tap "denisidoro/tools"
+tap "homebrew/bundle"
+tap "homebrew/services"
+tap "ngrok/ngrok"
+brew "bash"
+brew "bat"
+brew "choose-gui"
+brew "coreutils"
+brew "findutils"
+brew "fzf"
+brew "git-delta"
+brew "gnu-sed"
+brew "hyperfine"
+brew "make"
+brew "mas"
+brew "maven"
+brew "nvm"
+brew "python@3.11"
+brew "tldr"
+brew "zsh"
+brew "denisidoro/tools/docpars"
+cask "alt-tab"
+cask "devtoys"
+cask "flameshot"
+cask "iterm2"
+cask "keycastr"
+cask "ngrok"
+cask "raycast"
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "SonicWall Mobile Connect", id: 822514576

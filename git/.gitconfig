@@ -3,3 +3,4 @@
 	email = roberto.martinez@deiser.com
 [core]
 	excludesfile = /Users/roberto.martinez/.gitignore_global
+	autocrlf = input

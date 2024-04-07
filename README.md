@@ -28,4 +28,6 @@ You need to know your GitHub username, repository and install ssh key if your re
 
 It also supports other git repos, but you need to know your git repository url.
 
-iTerm preferences must be configure manually in the application (Preferences / General / Preference)
+>⚠️ iTerm does not use a symlink for its configurations.
+> 
+> iTerm preferences must be configure manually in the application (Preferences / General / Preference)

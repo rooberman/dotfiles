@@ -4,10 +4,10 @@ set -euo pipefail
 
 source "$DOTLY_PATH/scripts/core/_main.sh"
 
-##? Remove docker containers
+##? Start docker containers
 ##?
 ##? Usage:
-##?    docker_container_remove
+##?    container_start
 docs::parse "$@"
 
 if docker ps >/dev/null 2>&1; then
@@ -16,7 +16,7 @@ if docker ps >/dev/null 2>&1; then
   if [[ -n $container ]]; then
     container_id=$(echo $container | awk -F ': ' '{print $1}')
 
-    docker container rm $container_id
+    docker start $container_id
   else
     echo "You haven't selected any container! ༼つ◕_◕༽つ"
   fi

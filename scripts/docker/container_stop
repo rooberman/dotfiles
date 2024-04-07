@@ -7,7 +7,7 @@ source "$DOTLY_PATH/scripts/core/_main.sh"
 ##? Stop docker containers
 ##?
 ##? Usage:
-##?    docker_container_stop
+##?    container_stop
 docs::parse "$@"
 
 if docker ps >/dev/null 2>&1; then

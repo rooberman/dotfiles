@@ -31,11 +31,11 @@ alias up='dot package update_all'
 
 # Docker
 alias dl="docker_list"
-#alias dcc="$DOTFILES_PATH/scripts/docker_connect"
-#alias dcstop="$DOTFILES_PATH/scripts/docker_container_stop"
+#alias dcc="$DOTFILES_PATH/scripts/docker/docker_connect"
+#alias dcstop="$DOTFILES_PATH/scripts/docker/container_stop"
 #alias dcs=dcstop
-#alias dcstart="$DOTFILES_PATH/scripts/docker_container_start"
-#alias dcr="$DOTFILES_PATH/scripts/docker_container_remove"
+#alias dcstart="$DOTFILES_PATH/scripts/docker/container_start"
+#alias dcr="$DOTFILES_PATH/scripts/docker/container_remove"
 alias di="docker images"
 
 # Personal

@@ -9,9 +9,12 @@ export CODELY_THEME_PWD_MODE="short" # full, short, home_relative
 # ------------------------------------------------------------------------------
 # Languages
 # ------------------------------------------------------------------------------
-export JAVA_HOME='/Library/Java/JavaVirtualMachines/amazon-corretto-15.jdk/Contents/Home'
 export GEM_HOME="$HOME/.gem"
 export GOPATH="$HOME/.go"
+
+export JAVA_17_HOME=$(/usr/libexec/java_home -v17)
+export JAVA_21_HOME=$(/usr/libexec/java_home -v21)
+export JAVA_HOME=$JAVA_17_HOME
 
 # ------------------------------------------------------------------------------
 # Apps

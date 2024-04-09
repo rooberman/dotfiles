@@ -46,5 +46,7 @@ alias cdpt="cdr; cd projectrak-cloud"
 alias cdec="cdr; cd exporter-cloud"
 alias un="nvm use node"
 
+alias idea="/Applications/IntelliJ\ IDEA.app/Contents/MacOS/idea"
+
 alias java17='export JAVA_HOME=$JAVA_17_HOME; export PATH=$JAVA_HOME/bin:$PATH'
 alias java21='export JAVA_HOME=$JAVA_21_HOME; export PATH=$JAVA_HOME/bin:$PATH'

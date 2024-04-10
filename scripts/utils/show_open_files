@@ -4,16 +4,21 @@ set -euo pipefail
 
 source "$DOTLY_PATH/scripts/core/_main.sh"
 
-##? Muestra los ficheros abiertos por un proceso
+##? Show open files by an app
 ##?
 ##? Usage:
-##?    show_open_files
+##?   show_open_files
+##?   show_open_files --watch
+##?
+##? Options:
+##?   -h --help   Show this screen.
+##?   -w --watch  Watch the changes
 docs::parse "$@"
 
-selected=$(ps axc | awk 'NR > 1' | awk '{print substr($0,index($0,$5))}' | sort -u | fzf)
+selected=$(dot utils list_opened_apps | fzf)
 
-if [ ! -z $1 ]; then
-    lsof -r 2 -c "$selected"
+if $watch; then
+	lsof -r 2 -c "$selected" | awk '{print $4 " " $9}'
 else
-    lsof -c "$selected"
+	lsof -c "$selected" | awk '{print $4 " " $9}'
 fi

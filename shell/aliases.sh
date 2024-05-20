@@ -42,7 +42,7 @@ alias reload="source ~/.zshrc"
 alias home="cd ~"
 alias cdr="home; cd repos"
 alias cdptk="cdr; cd projectrak-cloud"
-alias cdepx="cdr; cd exporter-cloud"
+alias cdexp="cdr; cd exporter-cloud"
 alias un="nvm use node"
 
 alias idea="/Applications/IntelliJ\ IDEA.app/Contents/MacOS/idea"

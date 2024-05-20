@@ -14,7 +14,7 @@ export GOPATH="$HOME/.go"
 
 export JAVA_17_HOME=$(/usr/libexec/java_home -v17)
 export JAVA_21_HOME=$(/usr/libexec/java_home -v21)
-export JAVA_HOME=$JAVA_17_HOME
+export JAVA_HOME=$JAVA_21_HOME
 
 # ------------------------------------------------------------------------------
 # Apps

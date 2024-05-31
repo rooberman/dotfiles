@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Uninstall forge application
+##?
+##? Usage:
+##?    uninstall
+docs::parse "$@"
+
+installs=$(forge install list | awk '/^│/ && NR>5 {print $2"\t"$4"\t"$6}' | fzf)
+
+if [[ -n $installs ]]; then
+    install_id=$(echo $installs | awk '{print $1}')
+
+    echo "Uninstall... $install_id"
+    forge uninstall $install_id
+else
+    echo "You haven't selected any instalation! ༼つ◕_◕༽つ"
+fi

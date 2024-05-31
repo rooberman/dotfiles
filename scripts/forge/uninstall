@@ -10,6 +10,12 @@ source "$DOTLY_PATH/scripts/core/_main.sh"
 ##?    uninstall
 docs::parse "$@"
 
+if ! command -v forge &> /dev/null
+then
+    echo "forge cli could not be found"
+    exit 1
+fi
+
 installs=$(forge install list | awk '/^│/ && NR>5 {print $2"\t"$4"\t"$6}' | fzf)
 
 if [[ -n $installs ]]; then

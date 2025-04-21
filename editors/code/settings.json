@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "editor.largeFileOptimizations": false,
+    "database-client.autoSync": true,
+    "database-client.telemetry.usesOnlineServices": false,
+    "telemetry.telemetryLevel": "error",
+    "chat.agent.enabled": true,
+    "dbcode.connections": [],
+    "workbench.colorCustomizations": {},
+    "dbcode.resultLocation": "below"
+}

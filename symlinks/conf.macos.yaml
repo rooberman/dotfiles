@@ -18,3 +18,4 @@
     ~/bin/touch: /opt/homebrew/bin/gtouch
     ~/bin/zsh: /opt/homebrew/bin/zsh
     ~/.config/karabiner: os/mac/karabiner
+    ~/Library/Application\ Support/Code/User/settings.json: editors/code/settings.json
